@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- AOS (Animate on Scroll) CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .carousel-inner .carousel-caption {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: #f8fbfc;
+      text-align: center;
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    .carousel-inner .carousel-caption h5 {
+      font-size: 2.5rem;
+      font-weight: bold;
+    }
+
+    .carousel-inner .carousel-caption p {
+      font-size: 1.25rem;
+    }
+
+    .navbar-light .navbar-nav .nav-link {
+      color: #333;
+      font-weight: 600;
+    }
+
+    .navbar-light .navbar-nav .nav-link:hover {
+      color: #007bff;
+    }
+
+    #about,
+    #tutorial,
+    #forum,
+    #pelaporan {
+      scroll-margin-top: 80px;
+    }
+
+    .card-body {
+      background-color: #bfd6f7;
+    }
+
+    .btn-primary:hover {
+      background-color: #0056b3;
+      transform: scale(1.05);
+      transition: all 0.3s ease;
+    }
+
+    .navbar-nav .nav-link.active {
+      color: #007bff !important;
+    }
+
+    .section-title {
+      font-weight: 600;
+      color: #333;
+      font-size: 2rem;
+      text-transform: uppercase;
+    }
+
+    .section-text {
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease;
+    }
+
+    .carousel-item img {
+      transition: transform 0.5s ease;
+    }
+
+    .carousel-item:hover img {
+      transform: scale(1.05);
+    }
+  </style>
+
+  <title>Pengelolaan Sampah Pesisir</title>
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="70" tabindex="0">
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">Sampah Laut Jadi Rezeki</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="#carouselExampleCaptions">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">Edukasi</a></li>
+          <li class="nav-item"><a class="nav-link" href="#tutorial">Tutorial</a></li>
+          <li class="nav-item"><a class="nav-link" href="discus.html">Forum Diskusi</a></li>
+          <li class="nav-item"><a class="nav-link" href="#pelaporan">Pelaporan</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Carousel -->
+  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" data-bs-touch="true">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" class aria-label="active slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <a href="tutorial.html">
+          <img src="mang.jpeg" class="d-block w-100"
+            alt="Slide 1">
+        </a>
+        <div class="carousel-caption">
+          <h5>Pengelolaan Sampah Pesisir</h5>
+          <p>Informasi dan tips pengelolaan sampah untuk menjaga lingkungan pesisir.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <a href="plastic-recycling.html">
+          <img src="https://cdn.pixabay.com/photo/2019/07/14/16/06/park-4337477_1280.jpg" class="d-block w-100"
+            alt="Slide 2">
+        </a>
+        <div class="carousel-caption">
+          <h5>Manfaatkan Sampah Organik</h5>
+          <p>Pelajari cara memanfaatkan sampah organik menjadi pupuk kompos.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <a href="reporting.html">
+          <img src="https://cdn.pixabay.com/photo/2015/12/28/14/31/garbage-can-1111449_1280.jpg" class="d-block w-100"
+            alt="Slide 3">
+        </a>
+        <div class="carousel-caption">
+          <h5>Daur Ulang Sampah Plastik</h5>
+          <p>Temukan cara kreatif mengolah sampah plastik.</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!-- About Section -->
+  <section id="about" class="py-5">
+    <div class="container text-center" data-aos="fade-up">
+      <h2 class="fw-bold section-title">Tentang Kami</h2>
+      <p class="section-text mx-auto mb-4" style="max-width: 700px;">Website ini dirancang sebagai pusat edukasi dan panduan pengelolaan
+        sampah. Agar Masyarakat tidak lagi membuang sampah di laut dan hutan mangrove yang menyebabkan rusaknya ekosistem di laut.Dengan itu masyarakat dapat belajar cara memanfaatkan sampah an-organik dan organik menjadi hal yang memiliki nilai jual, serta berbagi informasi di forum
+        diskusi.</p>
+    </div>
+
+    <div> <!-- About Section -->
+      <section id="about" class="py-5">
+        <div class="container text-center" data-aos="fade-up">
+          <h2 class="fw-bold section-title">dampak sampah</h2>
+          <p class="section-text mx-auto mb-4" style="max-width: 700px;">Sampah yang dibuang ke laut memberikan dampak serius bagi ekosistem laut, kehidupan manusia, dan lingkungan global. Dampaknya meliputi kerusakan habitat laut, ancaman terhadap keanekaragaman hayati, pencemaran rantai makanan, penyebaran penyakit, hingga risiko sosial dan ekonomi. Sampah, terutama plastik, membutuhkan waktu sangat lama untuk terurai, sehingga menjadi ancaman jangka panjang yang terus merusak keseimbangan alam.</p>
+        </div>
+
+  </section>
+
+  <!-- Tutorial Section -->
+  <section id="tutorial" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center fw-bold section-title mb-4" data-aos="fade-up">Tutorial Pengelolaan Sampah</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card h-100" data-aos="fade-up" data-aos-delay="100">
+            <img src="organik.jpeg" class="card-img-top" alt="Organik">
+            <div class="card-body">
+               <h5 class="card-title">Pengolahan Sampah Organik</h5>
+              <p class="card-text">Sampah organik adalah jenis sampah yang berasal dari bahan-bahan alami, seperti tumbuhan atau hewan, yang dapat terurai secara alami melalui proses biologis. Sampah ini biasanya dihasilkan dari aktivitas sehari-hari manusia, seperti memasak, berkebun, atau proses pertanian Sampah organik yang berasal dari hewan dan tumbuhan adalah:
+                Kotoran hewan, Bangkai hewan, Sisa buah dan sayur, Dedaunan, Kayu, Tulang ikan, Sisa makanan.Cara mengolah sampah organik yaitu menjadi pupuk alami yang berguna untuk tanaman dan sebagai pakan maggot yang bisa di manfaatkan untuk pakan ternak seperti ayam dan ikan.</p>
+                <a href="https://medium.com/@wahyurinaoktaviani/cara-pengolahan-sampah-organik-berupa-sisa-makanan-bisa-jadi-cuan-lohh-4a62f3d30911"a><button type="submit"class="btn btn-primary">selengkapnya</button></a>
+              </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100" data-aos="fade-up" data-aos-delay="200">
+            <img src="anorganik.jpeg" class="card-img-top" alt="Plastik">
+            <div class="card-body">
+               <h5 class="card-title">Pengolahan Sampah An-organik</h5>
+              <p class="card-text">Sampah an-organik adalah salah satu jenis limbah yang dihasilkan oleh aktivitas manusia maupun proses industri, yang tidak dapat terurai secara alami oleh mikroorganisme.Contoh limbah anorganik adalah plastik seperti kantong belanja,botol plastik,kemasan makanan dan kebutuhan rumah tangga.Contoh pengeolahanya yaitu dengan di buatnya paving block</p>
+              <a href="https://medium.com/@wahyurinaoktaviani/cara-pengolahan-sampah-organik-berupa-sisa-makanan-bisa-jadi-cuan-lohh-4a62f3d30911"a><button type="submit"class="btn btn-primary">selengkapnya</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100" data-aos="fade-up" data-aos-delay="300">
+            <img src="pilsam.jpg" class="card-img-top" alt="Forum">
+            <div class="card-body">
+              <h5 class="card-title">Pemilahan Sampah</h5>
+              <p class="card-text">agar bisa mengolah sampah menjadi paving blok masyarakat perlu memisahkan atau memilah sampah yag bisa di jadikan paving blok, antara lain sampah plastik kemasan dan botol plastik
+
+                untuk itu masyarakat bisa mengumpulkan sampah dengan kategori diatas untuk di tukaran dan akan mendapatkan imbalan yang sesuai dengan syarat dan ketentuan yang ada.</p>
+                <a href="https://medium.com/@wahyurinaoktaviani/jenis-jenis-sampah-04b2ba57ac14"><button type="submit"class="btn btn-primary">selengkapnya</button></a>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Forum Section -->
+  <section id="forum" class="py-5">
+    <div class="container">
+      <h2 class="text-center fw-bold section-title mb-4" data-aos="fade-up">Forum Diskusi</h2>
+      <p class="section-text mx-auto mb-4 text-center" style="max-width: 700px;" data-aos="fade-up" data-aos-delay="100">
+        Forum diskusi kami memungkinkan Anda untuk bertukar pikiran dan berbagi pengalaman terkait pengelolaan sampah.
+      </p>
+      <div class="text-center">
+        <a href="discus.html" class="btn btn-primary">Mulai Diskusi</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pelaporan Section -->
+  <section id="pelaporan" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center fw-bold section-title mb-4" data-aos="fade-up">Pelaporan Sampah</h2>
+      <p class="section-text mx-auto mb-4 text-center" style="max-width: 700px;" data-aos="fade-up" data-aos-delay="100">
+        Laporkan masalah sampah yang Anda temui di sekitar Anda dan bantu kami menjaga lingkungan.
+      </p>
+      <div class="text-center">
+        <a href="https://wa.me/6287860105770" target="_blank">
+          <button type="submit" class="btn btn-primary">Laporkan Sekarang</button>
+        </a>
+      </div>
+    </div>
+</section>
+
+  <!-- Footer -->
+  <footer class="py-4 bg-dark text-white text-center">
+    <p class="mb-0">© 2024 Pengelolaan Sampah Pesisir. All rights reserved.</p>
+  </footer>
+
+  <!-- Bootstrap and AOS JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pzjw8f+ua7Kw1TIq0gfyYvE6Amx92k42abp3A6xYChLVKxwSLy9zTYpNTOOEK4tPp" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+  <!-- Custom JS -->
+  <script>
+    // Initialize AOS (Animate on Scroll)
+    AOS.init({
+      duration: 1000,
+      easing: 'ease-in-out',
+      once: true,
+    });
+  </script>
+
+</body>
+
+</html>
